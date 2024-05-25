@@ -5,6 +5,7 @@
 body{
   font-family: Roboto;
   margin: 0;
+  background: var(--color-light-grey);
 }
 
 h1 { 
@@ -17,7 +18,47 @@ h1 {
 //   margin-left: 1%;
 //   color: var(--color-brown);
 // }
-
 .margin {
   margin-bottom: 45px;
+}
+
+.container {
+  padding: 10px 50px;
+}
+
+.title {
+  font-size: 30px;
+  color:var(--color-dark-green);
+  padding: 40px auto;
+  font-weight: bold;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-indent: 70px;
+  text-align: justify;
+  color: var(--color-brown);
+}
+
+.detail {
+  width: 300px;
+  display: grid;
+}
+
+
+.image {
+  width: 100%;
+  border: 2px solid var(--color-dark-green);
+}
+
+figcaption {
+  margin-top: 10px;
 }

@@ -1,8 +1,8 @@
 .header {
   font-family: Merienda;
   display: flex;
-  justify-content: space-around;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 10px 50px;
   gap: 20px;
   background: var(--color-dark-green);
 }
