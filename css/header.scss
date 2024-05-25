@@ -1,0 +1,49 @@
+.header {
+  font-family: Merienda;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 20px;
+  background: var(--color-dark-green);
+
+  a { text-decoration: none;}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding-inline-start: 0;
+  }
+  li { margin: 0; }
+
+  &__logo {
+    font-size: 30px;
+    color: var(--color-light-grey);
+
+    &:hover {
+      color: var(--color-light-green);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav__link {
+    font-size: 18px;
+    &--active {
+      color: var(--color-light-green) !important;
+    }
+
+    &:visited, &:link { color: var(--color-light-grey);}
+    &:hover {
+      color: var(--color-light-green);
+    }
+
+   
+  }
+
+}
+
+  
+      

@@ -1,0 +1,45 @@
+.header {
+  font-family: Merienda;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 20px;
+  background: var(--color-dark-green);
+}
+.header a {
+  text-decoration: none;
+}
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding-inline-start: 0;
+}
+.header li {
+  margin: 0;
+}
+.header__logo {
+  font-size: 30px;
+  color: var(--color-light-grey);
+}
+.header__logo:hover {
+  color: var(--color-light-green);
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .nav__link {
+  font-size: 18px;
+}
+.header .nav__link--active {
+  color: var(--color-light-green) !important;
+}
+.header .nav__link:visited, .header .nav__link:link {
+  color: var(--color-light-grey);
+}
+.header .nav__link:hover {
+  color: var(--color-light-green);
+}
+
+/*# sourceMappingURL=header.css.map */

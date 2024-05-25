@@ -1,0 +1,18 @@
+@import url("./colors.css");
+@import url("./intro.css");
+@import url("./header.css");
+body {
+  font-family: Roboto;
+  margin: 0;
+}
+
+h1 {
+  font-family: Merienda;
+  font-weight: 500;
+}
+
+.margin {
+  margin-bottom: 45px;
+}
+
+/*# sourceMappingURL=style.css.map */

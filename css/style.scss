@@ -1,0 +1,23 @@
+@import url("./colors.css");
+@import url("./intro.css");
+@import url("./header.css");
+
+body{
+  font-family: Roboto;
+  margin: 0;
+}
+
+h1 { 
+  font-family: Merienda;
+  font-weight: 500;
+}
+
+// li {
+//   font-size: 16px;
+//   margin-left: 1%;
+//   color: var(--color-brown);
+// }
+
+.margin {
+  margin-bottom: 45px;
+}

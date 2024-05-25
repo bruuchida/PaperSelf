@@ -1,0 +1,41 @@
+body {
+  background: var(--color-brown);
+}
+
+.intro {
+  font-family: Merienda, sans-serif;
+  color: var(--color-light-grey);
+  margin-top: 400px;
+  margin-left: 300px;
+
+  &__title {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 500;
+  }
+
+  &__description {
+    margin: 0;
+  }
+
+  &__separator {
+    width: 100%;
+    margin: 10px 0;
+    border-top: 3px solid var(--color-light-grey);
+  }
+
+  &__action {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__icon {
+    display: inherit;
+
+    img {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
