@@ -2,112 +2,41 @@
 <html>
 <head>
   <title>PaperSelf - Curiosidades</title>
-  
-  <link rel="icon" type="image/png" href="Imagens/floresta.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  
+  <link rel="icon" type="image/png" href="./icons/forest.svg">
 
-  <!-- Fonte -->
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
-
-  <!-- Icones -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  
-  <!-- CSS EXTERNO -->
-  <link rel="stylesheet" href="style.css">
-
+  <script type="text/javascript" src="./js/script.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-  <!-- Menu -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-    <a class="navbar-brand-logo" href="Curiosidades.html">PaperSelf</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-        <a class="nav-opcao" href="Sobre.html">Sobre n&oacute;s</a>
-        <a class="nav-opcao" href="Etapas.html">Passo-a-Passo</a>
-        <a class="nav-opcao" href="Materiais.html">Materiais</a>
-        <a class="nav-opcao active" href="Curiosidades.html">Curiosidades<span class="sr-only">(current)</span></a>
-      </div>
-    </div>
+  <nav class="header">
+    <a class="header__logo" href="./index.html">PaperSelf</a>
+    <button class="header__menu" onclick="toggleMenu()"><img src="./icons/menu.svg"/></button>
+    <ul class="header__nav" id="menu-links">
+      <li><a class="nav__link" href="about.html">Sobre nós</a></li>
+      <li><a class="nav__link" href="./steps.html">Passo-a-Passo</a></li>
+      <li><a class="nav__link" href="./materials.html">Materiais</a></li>
+      <li><a class="nav__link nav__link--active" href="./curiosities.html">Curiosidades</a></li>
+    </ul>
   </nav>
 
-   <!-- Scroll back -->
-  <button onclick="voltaInicio()" id = "btnInicio" title="Voltar para início"><i class="fa fa-arrow-up fa-1x"></i></button>
-
-    <script>
-
-        var btn = document.getElementById("btnInicio");
-
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            btn.style.display = "block";
-          } else {
-            btn.style.display = "none";
-          }
-        }
-
-
-        function voltaInicio() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0; 
-        }
-
-    </script>
-
-
-  <!-- corpo site -->
-  <div class="corpo-back container-fluid" style="height: 100%;">
-    <div>
-      <br><br>
-      <h2 class="titulo">Curiosidades</h2>
-    </div>
-    <div class="corpo-texto">
-      <br>
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-10">
-          <p>Desde que a ser humano se comunica acreditamos que ele procura um meio de deixar seus registros, lembranças, histórias e conhecimentos. Visualizamos os comportamentos de registros desde as pinturas rupestres nas cavernas, até os blocos de argila e ferro encontrados no período do império romano. Mas desde 3.200 anos antes de Cristo que já te tem o feito do papel como estratégia, e a ancestralidade do nosso feito data dos papiros no Egito Antigo.</p>
-          <p>O papiro é uma planta que cresce nas margens dos rios africanos, comumente encontrado nas margens do Nilo. As características dessa planta permitem que se disponha a medula de suas folhas em um conjunto e, ao martelar sua disposição ela solta sua seiva que serve como cola, assim tendo um papiro uniforme que seria polido com pedras de ágata ou marfim que permite a escrita e o desenho. Existia até mesmo um apagador chamado de spongia deletis.</p>
-          <p>É como em muitos casos como este que os precursores dos nossos papéis foram encontrados e elaborados antes de serem propriamente inventados e confeccionados na China, onde as técnicas ensinadas em nossa oficina tiveram sua origem.</p>
-        </div> 
-      </div>
-      <div class="row" style="justify-content: center;">
-        <img src="Imagens/serie_de_quadros.png" width="600px" style="border: 2px solid #008249;">
-      </div>
-      <div class="row" style="justify-content: center;">
-        <figcaption style="text-align: justify; width: 600px; margin-top: 10px; font-size: 14px; text-indent: 0%;"><i>Uma série de quatro ilustrações datando de 1634, na China. Onde é apresentado as quatro principais etapas do papel: a preparação da fibra, formação da folha, prensagem e secagem.</i></figcaption>  
-        <br><br>
+  <main class="container">
+    <h1 class="title">Curiosidades</h1>
+    <div class="content">
+      <p>Desde que a ser humano se comunica acreditamos que ele procura um meio de deixar seus registros, lembranças, histórias e conhecimentos. Visualizamos os comportamentos de registros desde as pinturas rupestres nas cavernas, até os blocos de argila e ferro encontrados no período do império romano. Mas desde 3.200 anos antes de Cristo que já te tem o feito do papel como estratégia, e a ancestralidade do nosso feito data dos papiros no Egito Antigo.</p>
+      <p>O papiro é uma planta que cresce nas margens dos rios africanos, comumente encontrado nas margens do Nilo. As características dessa planta permitem que se disponha a medula de suas folhas em um conjunto e, ao martelar sua disposição ela solta sua seiva que serve como cola, assim tendo um papiro uniforme que seria polido com pedras de ágata ou marfim que permite a escrita e o desenho. Existia até mesmo um apagador chamado de spongia deletis.</p>
+      <p>É como em muitos casos como este que os precursores dos nossos papéis foram encontrados e elaborados antes de serem propriamente inventados e confeccionados na China, onde as técnicas ensinadas em nossa oficina tiveram sua origem.</p>
+      <div class="detail detail--larger">
+        <img src="./images/serie_de_quadros.png" class="image">
+        <figcaption>Uma série de quatro ilustrações datando de 1634, na China. Onde é apresentado as quatro principais etapas do papel: a preparação da fibra, formação da folha, prensagem e secagem.</figcaption>
       </div>
     </div>
-  </div>
+  </main>
+  <footer class="footer">
+    <a href="https://github.com/bruuchida" target="_blank"><img src="./icons/github.svg" alt="github"></a>
+    <a href="https://linkedin.com/in/bruna-tiemi-uchida" target="_blank"><img src="./icons/linkedin.svg" alt="linkedin"></a>
+  </footer>
 </body>
-<footer>
-  <div class="bg-footer container-fluid">
-    <h2 style="color: #c8c8c8; margin-left: 20%;">Contato</h2>
-    <div class="row">
-      <div class="col-sm-6">
-        <h4 style="color: #c8c8c8; margin-left: 40%;"><b>Bruna Tiemi Uchida</b></h4>
-        <img src="Imagens/email.png" class="bg-contato-icone" style="margin-left: 40%;"/><span style="color: #c8c8c8; margin-left: 1%; font-size: 18px;">brunatiemiuchida@gmail.com</span><br>
-        <img src="Imagens/linkedin.png" class="bg-contato-icone" style="margin-left: 40%;"/><span style="color: #c8c8c8; margin-left: 1%; font-size: 18px;"><a href="https://www.linkedin.com/in/bruna-tiemi-uchida" class="link_dev">Bruna Tiemi Uchida</a></span><br>
-      </div>
-      <div class="col-sm-6">
-        <h4 style="color: #c8c8c8;"><b>Nicolas Navarro</b></h4>
-        <img src="Imagens/email.png" class="bg-contato-icone"/><span style="color: #c8c8c8; margin-left: 1%; font-size: 18px;">nicolass159753@hotmail.com</span><br>
-        <img src="Imagens/linkedin.png" class="bg-contato-icone" /><span style=" margin-left: 1%; font-size: 18px;"><a href="https://www.linkedin.com/in/nicolas-navarro-8a5462b7" class="link_dev">Nicolas Navarro</a></span><br>
-      </div>
-    </div>
-    <br>
-    <p style="color: #c8c8c8; text-align: center; margin-top: 15px;">Desenvolvido por <a href="mailto:brunatiemiuchida@gmail.com" class="link_dev">Bruna Tiemi Uchida</a></p> 
-  </div>
-</footer>
 </html>
