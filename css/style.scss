@@ -61,11 +61,18 @@ h1, h2, h3 {
   text-indent: 30px;
   text-align: justify;
   color: var(--color-brown);
+
+  li {
+    text-indent: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .detail {
   width: 300px;
   justify-self: center;
+  text-indent: 0;
+  margin-bottom: 30px;
 
   &--larger {
     width: 800px;
