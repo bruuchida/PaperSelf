@@ -17,6 +17,7 @@ body {
   font-family: Merienda, sans-serif;
   color: var(--color-light-grey);
   width: 70%;
+  padding: 0 0 0 100px;
 
   &__title {
     margin: 0;
@@ -38,6 +39,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 20px;
+    padding: 0 20px 0 0;
   }
 
   &__icon {

@@ -1,1 +1,46 @@
-@import"./colors.css";body{margin:0}.container{height:100vh;background:var(--color-brown);margin:0;display:flex;align-items:center;justify-content:flex-end}.intro{font-family:Merienda,sans-serif;color:var(--color-light-grey);width:70%}.intro__title{margin:0;font-size:50px;font-weight:500}.intro__description{margin:0}.intro__separator{width:100%;margin:10px 0;border-top:3px solid var(--color-light-grey)}.intro__action{display:inline-flex;align-items:center;gap:20px}.intro__icon{display:inherit}.intro__icon img{width:38px;height:38px}
+@import url("./colors.css");
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  background: var(--color-brown);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.intro {
+  font-family: Merienda, sans-serif;
+  color: var(--color-light-grey);
+  width: 70%;
+  padding: 0 0 0 100px;
+}
+.intro__title {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 500;
+}
+.intro__description {
+  margin: 0;
+}
+.intro__separator {
+  width: 100%;
+  margin: 10px 0;
+  border-top: 3px solid var(--color-light-grey);
+}
+.intro__action {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px 0 0;
+}
+.intro__icon {
+  display: inherit;
+}
+.intro__icon img {
+  width: 38px;
+  height: 38px;
+}
