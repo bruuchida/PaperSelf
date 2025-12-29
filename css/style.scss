@@ -72,10 +72,11 @@ h1, h2, h3 {
   width: 300px;
   justify-self: center;
   text-indent: 0;
-  margin-bottom: 30px;
 
-  &--larger {
-    width: 800px;
+  @media (min-width: 768px) {
+    &--larger {
+      width: 800px;
+    }
   }
 }
 

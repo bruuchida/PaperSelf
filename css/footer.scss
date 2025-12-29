@@ -6,4 +6,11 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  @media (min-width: 1025px) {
+    &--fixed {
+      position: absolute;
+      bottom: 0;
+    }
+  }
 }
