@@ -1,6 +1,7 @@
 # PaperSelf
 
 [PT-BR]
+
 Este é um projeto criado para fins acadêmicos em 2020. Em 2025, este foi atualizado para melhores práticas e manutenabilidade além de corrigir erros em dispositivos mobile.
 
 [EN]
