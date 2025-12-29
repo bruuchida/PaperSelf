@@ -11,4 +11,4 @@ Este é um projeto criado para fins acadêmicos em 2020. Em 2025, este foi atual
 
 ## Acesso
 
-<a href="https://bruuchida.github.io/GeradorDaily/" target="_blank"> Disponível para uso aqui!</a>
+<a href="https://bruuchida.github.io/PaperSelf/index.html" target="_blank"> Disponível para uso aqui!</a>
