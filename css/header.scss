@@ -6,6 +6,7 @@
   padding: 10px 20px;
   gap: 20px;
   background: var(--color-dark-green);
+  position: relative;
 
   button {
     background: var(--color-dark-green);
@@ -22,7 +23,11 @@
   }
   li { 
     margin: 0;
-    padding: 10px 0;
+    padding: 10px 20px;
+
+    @media (min-width: 768px) {
+      padding: 10px 0;
+    }
   }
 
   @media(min-width: 768px) {
@@ -41,17 +46,31 @@
     }
   }
 
+  &__menu {
+    cursor: pointer;
+  }
+
   &__nav {
-    display: none;
+    background: var(--color-dark-green);
+    position: absolute;
+    opacity: 0;
+    transform: translate(-20px, -400px);
+    transition: opacity 0.1s ease-in-out;
+
+    &--open {
+      opacity: 1;
+      transform: translate(-20px, 50px);
+      transition: opacity 0.1s ease-in-out;
+      border-top: 1px solid var(--color-light-green);
+    }
 
     @media (min-width: 768px) {
+      opacity: 1;
       display: flex;
       align-items: center;
       gap: 20px;
-    }
-
-    &--open {
-      display: block;
+      position: relative;
+      transform: revert;
     }
   }
 
@@ -59,14 +78,14 @@
     font-size: 18px;
     &--active {
       color: var(--color-light-green) !important;
+      text-decoration: none;
     }
 
     &:visited, &:link { color: var(--color-light-grey);}
     &:hover {
       color: var(--color-light-green);
+      text-decoration: underline;
     }
-
-   
   }
 
 }
