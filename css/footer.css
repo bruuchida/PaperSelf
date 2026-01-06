@@ -7,7 +7,7 @@
   align-items: center;
   gap: 10px;
 }
-@media (min-width: 768px) and (min-height: 800px) {
+@media (min-width: 768px) and (min-height: 900px) {
   .footer--fixed {
     position: absolute;
     bottom: 0;
